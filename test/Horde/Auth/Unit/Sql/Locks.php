@@ -77,14 +77,13 @@ class Locks extends Base
     public function testLockUserOnceWorks()
     {
         self::$auth->lockUser('konqui');
+        // we didn't fail above, then assert 'true' here...
+        $this->assertTrue(true);
     }
-
-    /**
-     * @expectedException Horde_Auth_Exception
-     */
 
     public function testLockUserTwiceFails()
     {
+        $this->expectException('Horde_Auth_Exception');
         self::$auth->lockUser('konqui');
         self::$auth->lockUser('konqui');
     }
@@ -111,6 +110,8 @@ class Locks extends Base
         self::$auth->unlockUser('konqui');
         self::$auth->unlockUser('konqui');
         self::$auth->unlockUser('konqui');
+        // we didn't fail above, then assert 'true' here...
+        $this->assertTrue(true);
     }
 
 }
