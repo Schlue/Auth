@@ -18,6 +18,7 @@ namespace Horde\Auth\Unit;
 use Horde\Auth\TestCase;
 use \Horde_Auth_Passwd;
 
+#[\AllowDynamicProperties]
 class PasswdTest extends TestCase
 {
     public function setUp(): void

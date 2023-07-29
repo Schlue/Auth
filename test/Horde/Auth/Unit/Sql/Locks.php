@@ -3,6 +3,9 @@
  * Prepare the test setup.
  */
 namespace Horde\Auth\Unit\Sql;
+use \Horde_Db_Migration_Migrator;
+use \Horde_Lock_Sql;
+use \Horde_Auth_Sql;
 
 /**
  * @category   Horde

@@ -15,7 +15,11 @@
  */
 namespace Horde\Auth\Unit;
 use Horde\Auth\TestCase;
+use \Horde_Auth_Kolab;
+use \Horde_Kolab_Session_Exception;
+use \Horde_Kolab_Session_Exception_Badlogin;
 
+#[\AllowDynamicProperties]
 class KolabTest extends TestCase
 {
     public function setUp(): void
