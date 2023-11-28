@@ -6,7 +6,7 @@
     </include>
   </coverage>
   <testsuites>
-    <testsuite name="Horde Auth Unit Tests">
+    <testsuite name="horde/Auth">
       <directory>test</directory>
     </testsuite>
   </testsuites>
